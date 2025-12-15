@@ -8,10 +8,8 @@ const MONGODB_URL = process.env.MONGODB_URL;
 const  connectDB = async () => {
 
   try {
-      // await mongoose.connect("mongodb+srv://prerak:prerak@cluster0.aundzsj.mongodb.net/todoapp?appName=Cluster0");
       await mongoose.connect(MONGODB_URL);
-
-      console.log("COnnection is done in db.js file...");
+      console.log("✅ Connection is done in db.js file...");
   } catch (error) {
     console.error("❌ MongoDB connection error:", err);
     console.error(error.message);
