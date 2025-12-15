@@ -39,7 +39,7 @@
 
 
     document.getElementById("loadUsers").addEventListener("click", () => {
-      fetch(`${API_URL}/users`)
+      fetch(`${API_BASE}/users`)
         .then(response => {
           if (!response.ok) {
             throw new Error("Failed to fetch users");
